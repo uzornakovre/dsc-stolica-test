@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Тестовое задание для ДСК Столица">
+    <meta name="author" content="Константин Филяев">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ДСК Столица</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__top">
+        <img class="header__logo" src="./images/DSK_logo.svg" alt="Логотип ДСК Столица">
+        <input class="header__search" type="text" placeholder="Поиск по каталогу">
+        <button class="header__burger-menu" type="button"></button>
+      </div>
+      <ul class="breadcrumbs">
+        <li><a class="breadcrumbs__link" href="#">Главная</a></li>
+        <li><a class="breadcrumbs__link" href="#">Каталог товаров</a></li>
+        <li><a class="breadcrumbs__link" href="#">Частное домостроение</a></li>
+        <li><a class="breadcrumbs__link" href="#">Плиты перекрытия</a></li>
+        <li><a class="breadcrumbs__link" href="#">Плиты ПК</a></li>
+        <li><a class="breadcrumbs__link" href="#">Пк 63-12-8</a></li>
+      </ul>
+    </header>
+    <main class="content">
+      <section class="product">
+        <h1 class="product__title">Пк 63-12-8</h1>
+        <div class="product__rating">
+          <img class="product__rating-star" src="./images/star_full.png" alt="Звездочка рейтинга">
+          <img class="product__rating-star" src="./images/star_full.png" alt="Звездочка рейтинга">
+          <img class="product__rating-star" src="./images/star_full.png" alt="Звездочка рейтинга">
+          <img class="product__rating-star" src="./images/star_half.png" alt="Половина звездочки рейтинга">
+          <img class="product__rating-star" src="./images/star_empty.png" alt="Звездочка рейтинга отсутствует">
+        </div>
+        <ul class="product__menu">
+          <li><a class="product__menu-link">Все о товаре</a></li>
+          <li><a class="product__menu-link">Характеристики</a></li>
+          <li><a class="product__menu-link">Отзывы</a></li>
+        </ul>
+        <div class="product__photos">
+          <img class="product__photo" src="./images/img.png">
+        </div>
+      </section>
+      <section class="specifications">
+        <h2 class="specifications__title">Характеристики</h2>
+        <ul class="specifications__list">
+          <li><p class="specifications__item">Наименование: <span class="bold">Плиты ПК</span></p></li>
+          <li><p class="specifications__item">Завод-производитель: <span class="bold">Москва и МО</span></p></li>
+          <li><p class="specifications__item">Технические условия: <span class="bold">ГОСТ 9561-91</span></p></li>
+          <li><p class="specifications__item">Длина, мм: <span class="bold">6300</span></p></li>
+          <li><p class="specifications__item">Ширина, мм: <span class="bold">1200</span></p></li>
+          <li><p class="specifications__item">Высота, мм: <span class="bold">220</span></p></li>
+          <li><p class="specifications__item">Расчетная нагрузка, кг/м<sup>2</sup> <span class="bold">800</span></p></li>
+          <li><p class="specifications__item">Вес 1 шт, т.: <span class="bold">1,755</span></p></li>
+        </ul>
+      </section>
+      <section class="order">
+        <div class="order__price">
+          <p class="order__price-item">484,00 &#8381;/шт.</p>
+          <p class="order__price-meter">154,88 &#8381;/м<sup>2</sup></p>
+          <p class="order__article">Артикул: <span class="bold">0543600</span></p>
+        </div>
+        <div class="order__quantity">
+          <button class="order__quantity-button order__quantity-button_minus" type="button"></button>
+          <p class="order__quantity-result">10 шт.</p>
+          <button class="order__quantity-button order__quantity-button_plus" type="button"></button>
+        </div>
+        <button class="order__button order__button_type_cart" type="button"></button>
+        <button class="order__button order__button_type_favorites" type="button"></button>
+        <button class="order__button order__button_type_call" type="button"></button>
+        <div class="order__contacts">
+          <p class="order__contacts-tip">Также для вашего удобства мы доступны в мессенджерах</p>
+          <ul class="order__contacts-list">
+            <li><img class="order__contacts-item" src="./images/WhatsApp.png" alt="Логотип WhatsApp"></li>
+            <li><img class="order__contacts-item" src="./images/Viber.png" alt="Логотип Viber"></li>
+            <li><img class="order__contacts-item" src="./images/Telegram.png" alt="Логотип Telegram"></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
