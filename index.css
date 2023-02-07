@@ -1,0 +1,129 @@
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts.css');
+
+.page {
+  max-width: 414px;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-size: 14px;
+  margin: 0 auto;
+  background-color: #FFF;
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header {
+  margin-top: 10px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.header__top {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__search {
+  position: relative;
+  min-width: 250px;
+  height: 100%;
+
+}
+
+.header__search::placeholder {
+  color: #6C6C6C;
+}
+
+.header__search-input {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #E8E8E8;
+  width: 100%;
+  height: 100%;
+}
+
+.header__search-input:focus {
+  outline: none;
+  border-color: #00F;
+}
+
+.header__search-submit {
+  position: absolute;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url('./images/search.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  right: 0;
+  border: none;
+}
+
+.header__search-submit:hover {
+  background-image: url('./images/search-hover.png');
+  cursor: pointer;
+}
+
+.header__burger-menu {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background-color: #F6F6F6;
+  border-radius: 4px;
+  border: 1px solid #E8E8E8;
+  background-image: url('./images/menu_open.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__burger-menu:hover {
+  cursor: pointer;
+  background-color: #F0F0F0;
+}
+
+.header__burger-menu:active {
+  background-color: #F9F9F9;
+}
+
+.header__breadcrumbs {
+  min-height: 40px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  color: #005AA2;
+}
+
+.header__breadcrumbs-item {
+  margin-left: 22px;
+}
+
+.header__breadcrumbs-item:first-of-type {
+  margin: 0;
+  list-style: none;
+}
+
+.header__breadcrumbs-item:last-of-type > .header__breadcrumbs-link {
+  color: #000;
+  cursor: default;
+  font-weight: 700;
+}
+
+.header__breadcrumbs-link {
+  text-decoration: none;
+  color: #C3C3C3;
+}
+
+.header__breadcrumbs-link:hover {
+  color: #005AA2;
+}

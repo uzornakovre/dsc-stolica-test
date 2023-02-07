@@ -11,17 +11,20 @@
   <body class="page">
     <header class="header">
       <div class="header__top">
-        <img class="header__logo" src="./images/DSK_logo.svg" alt="Логотип ДСК Столица">
-        <input class="header__search" type="text" placeholder="Поиск по каталогу">
+        <a class="header__logo-link" href="#"><img class="header__logo" src="./images/DSK_logo.svg" alt="Логотип ДСК Столица"></a>
+        <form class="header__search">
+          <input class="header__search-input" type="text" placeholder="Поиск по каталогу">
+          <button class="header__search-submit" type="submit"></button>
+        </form>
         <button class="header__burger-menu" type="button"></button>
       </div>
-      <ul class="breadcrumbs">
-        <li><a class="breadcrumbs__link" href="#">Главная</a></li>
-        <li><a class="breadcrumbs__link" href="#">Каталог товаров</a></li>
-        <li><a class="breadcrumbs__link" href="#">Частное домостроение</a></li>
-        <li><a class="breadcrumbs__link" href="#">Плиты перекрытия</a></li>
-        <li><a class="breadcrumbs__link" href="#">Плиты ПК</a></li>
-        <li><a class="breadcrumbs__link" href="#">Пк 63-12-8</a></li>
+      <ul class="header__breadcrumbs">
+        <li class="header__breadcrumbs-item"><a class="header__breadcrumbs-link" href="#">Главная</a></li>
+        <li class="header__breadcrumbs-item"><a class="header__breadcrumbs-link" href="#">Каталог товаров</a></li>
+        <li class="header__breadcrumbs-item"><a class="header__breadcrumbs-link" href="#">Частное домостроение</a></li>
+        <li class="header__breadcrumbs-item"><a class="header__breadcrumbs-link" href="#">Плиты перекрытия</a></li>
+        <li class="header__breadcrumbs-item"><a class="header__breadcrumbs-link" href="#">Плиты ПК</a></li>
+        <li class="header__breadcrumbs-item"><a class="header__breadcrumbs-link" href="#">Пк 63-12-8</a></li>
       </ul>
     </header>
     <main class="content">
