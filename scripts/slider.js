@@ -11,11 +11,7 @@ var splidePhotos = new Splide( '#splide_place_photos', {
   drag: 'free',
   snap: false,
   arrows: false,
-  breakpoints: {
-    764: {
-      destroy: true,
-    },
-  }
+  pagination: true,
 } );
 
 splidePhotos.mount();
