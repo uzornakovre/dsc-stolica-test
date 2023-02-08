@@ -42,8 +42,20 @@
           <li class="product__menu-item"><a class="product__menu-link">Характеристики</a></li>
           <li class="product__menu-item"><a class="product__menu-link">Обзоры</a></li>
         </ul>
-        <div class="product__photos">
-          <img class="product__photo" src="./images/img.png">
+        <div class="product__photos splide" id="splide_place_photos">
+          <div class="splide__track">
+              <ul class="splide__list product__photos-list">
+                <li class="splide__slide"><img class="product__photo" src="./images/img.png"></li>
+                <li class="splide__slide"><img class="product__photo" src="./images/img.png"></li>
+                <li class="splide__slide"><img class="product__photo" src="./images/img.png"></li>
+                <li class="splide__slide"><img class="product__photo" src="./images/img.png"></li>
+                <li class="splide__slide"><img class="product__photo" src="./images/img.png"></li>
+              </ul>
+              <!-- <div class="product__photos-pagination-wrapper">
+
+              </div> -->
+            <ul class="splide__pagination product__photos-pagination"></ul>
+          </div>
         </div>
       </section>
       <section class="specifications">
@@ -85,5 +97,7 @@
         </div>
       </section>
     </main>
+    <script src="./vendor/splider/dist/js/splide.min.js"></script>
+    <script src="./scripts/slider.js"></script>
   </body>
 </html>
