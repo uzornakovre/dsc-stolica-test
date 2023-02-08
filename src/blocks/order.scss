@@ -1,0 +1,154 @@
+.order {
+  border: 2px solid #E9E9E9;
+  border-radius: 5px;
+  margin: 0 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__price-item {
+    font-size: 30px;
+    font-weight: 700;
+    color: #005AA2;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &__price-meter {
+    font-size: 18px;
+    color: #BEBEBE;
+    margin: 0;
+  }
+
+  &__price-article {
+    color: #005AA2;
+  }
+
+  &__buttons {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  &__quantity {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #E9E9E9;
+    border-radius: 5px;
+  }
+
+  &__quantity-button {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      opacity: .6;
+    }
+
+    &_minus {
+      background-color: #F6F6F6;
+      background-image: url('./images/minus.png');
+    }
+
+    &_plus {
+      background-color: #005AA2;
+      background-image: url('./images/Plus.png');
+    }
+  }
+
+  &__quantity-result {
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  &__button {
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    padding-left: 25%;
+    background-repeat: no-repeat;
+    background-position: 15% center;
+
+    &:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
+
+    &:active {
+      opacity: .6;
+    }
+
+    &_type {
+      &_cart {
+        background-color: #005AA2;
+        background-image: url('./images/shopping_cart.png');
+      }
+
+      &_favorites {
+        background-image: url('./images/favorite_border.png');
+        background-color: #F6F6F6;
+        border: 2px solid #E9E9E9;
+        color: #666;
+      }
+
+      &_call {
+        background-image: url('./images/phone_in_talk.png');
+        background-color: #00C232;
+      }
+    }
+  }
+
+  &__contacts {
+    margin-top: 15px;
+    display: flex;
+  }
+
+  &__contacts-tip {
+    font-size: 13px;
+    line-height: 1.4;
+    max-width: 64%;
+    color: #646464;
+  }
+
+  &__contacts-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__contacts-item {
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
+
+    &:active {
+      opacity: .6;
+    }
+  }
+}
